@@ -1,0 +1,6 @@
+This program creates two threads. One acts as a producer, and the other acts as a consumer. 
+The producer can only produce a limited number of items.
+If the inventory is full the producer has to wait for the consumer to consume items.
+
+The consumer can only consumer if there are items to conusume. If the inventory reaches zero
+the consumer has to wait for the producer to make more items.
