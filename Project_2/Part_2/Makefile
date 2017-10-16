@@ -1,4 +1,4 @@
-TARGETS= jxp154830_part1 jxp154830_part2
+TARGETS= Part1 Part2
 
 CROSS_TOOL =
 CC_CPP = $(CROSS_TOOL)g++
@@ -13,8 +13,3 @@ $(TARGETS):
 
 clean:
 		rm -f $(TARGETS)
-		
-assemble:
-		
-run: finiteStateMachine
-#	./finiteStateMachine 100101011
