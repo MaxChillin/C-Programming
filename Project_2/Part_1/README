@@ -1,0 +1,2 @@
+This program performs matrix multiplication. It reads two files matrixA.txt and matrixB.txt. 
+The matracies do not have to be square, but the normal matrix multiplication rules still apply.
