@@ -1,4 +1,4 @@
-TARGETS= Part1 Part2
+TARGETS= Part2
 
 CROSS_TOOL =
 CC_CPP = $(CROSS_TOOL)g++
