@@ -17,7 +17,7 @@ clock_t start, end, thread_start = 0, thread_end = 0;
 
 
 /****************************
- *  	PROTOTYPES  		*
+ *  	PROTOTYPES  	    *
  ****************************
  */
 void thread_1(void);
@@ -55,8 +55,8 @@ int main(int argc, char *argv[]){
 	printf("Matrix A is %d X %d\n", matrixARow, matrixAColumn);
 
 	/**************************************************
-	 * 				  MEMORY ALLOCATION				  *
-//	 **************************************************
+	 * 		MEMORY ALLOCATION		  *
+         **************************************************
 	 *This is where we allocate the memory for Matrix A
 	 */
 	matrixA = (int **)malloc(matrixARow * sizeof(*matrixA));
@@ -101,7 +101,7 @@ int main(int argc, char *argv[]){
 	printf("Matrix B is %d X %d\n", matrixBRow, matrixBColumn);
 
 	/**************************************************
-	 * 				  MEMORY ALLOCATION				  *
+	 * 		MEMORY ALLOCATION		  *
 	 **************************************************
 	 *This is where we allocate the memory for Matrix B
 	 */
@@ -135,7 +135,7 @@ int main(int argc, char *argv[]){
 
 
 	/**************************************************
-	 * 				  MEMORY ALLOCATION				  *
+	 * 		MEMORY ALLOCATION		  *
 	 **************************************************
 	 *This is where we allocate the memory for Matrix C
 	 */
