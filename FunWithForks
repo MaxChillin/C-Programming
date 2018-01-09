@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+
+
+int main(int argc, char *argv[]){
+    
+    int counter = 0;
+    char numbers[] = "0123456789";
+    
+    while(counter < 10){
+        
+        switch(fork()){
+            case -1:
+                perror("Fork Failed!");
+                exit(EXIT_FAILURE);
+            case 0:
+                /** Child Process */
+                if(counter % 2 != 0){
+                    sleep(1000);
+                }else{
+                    prinf("I am the child with ID %d and I have retrieved the number %c", getpid(), numbers[counter++]);
+                }
+                break;
+            default:
+                /** Parent Process */
+                if(counter % 2 == 0){
+                    sleep(1000);
+                }else{
+                    prinf("I am the parent with ID %d and I have retrieved the number %c", getpid(), numbers[counter++]);
+                }
+                
+        }// end of switch;
+        
+        wait();
+        
+    }// end of while loop
+    
+ return EXIT_SUCCESS;
+}
